@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css?family=Quicksand|Roboto" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>register</title>
+</head>
+<body>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+
+$('#forgotBtn').click(function() {
+	$('#mymodal').modal({
+		show : true,
+		keyboard: false
+	});
+});
+
+</script>
+
+<div class="modal fade" id="mymodal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4>forget password</h4>
+      </div>
+      <div class="modal-body">
+
+        <div class="line1" style="margin-bottom: 20px;">
+			Enter your email to reset your password
+		</div>
+
+		<div class="line2">
+			<div class="input-group input-group-lg">
+			  <input type="text" class="form-control" placeholder="address" autocomplete="off">
+			  <span class="input-group-btn">
+			    <button class="btn btn-info" type="submit">Send</button>
+			  </span>
+			</div>
+		</div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">ARG@EUN</a>
+    </div>
+	  
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+	
+      <form class="navbar-form navbar-left" action="result.html">
+       <div class="input-group "  style="margin-top: 3px;">  
+					       <input type="text" class="form-control input_edge light_blue_boarder" placeholder="Search" name="keyword" />  
+				            <span class="input-group-btn">  
+								<button type="submit" class="btn" style="margin-top: -1px;">Search</button>
+				          	</span>  
+					 </div>
+		</form>
+
+		
+	    <div class="navbar-right">
+		  	<a class="navbar-brand log_ico" href="register.html">&nbsp;</a>
+	    </div>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid mycontaier">
+
+	<div class="container page8">
+		<div class="row">
+			<div class="col-md-2 col-lg-2"> <p></p></div>
+			<div class="col-md-4 col-lg-4 first">
+				<div class="title">Log in</div>
+
+				<form method="post">
+					<div class="updown">
+						<input type="text" name="email" class="form-control light_blue_boarder input_edge" placeholder="email address">
+					</div>
+
+					<div class="updown">
+						<input type="password" name="password" class="form-control light_blue_boarder input_edge" placeholder="password">
+					</div>
+
+					<div class="updown ">
+						<div id="forgotBtn" class="padding-10"><a class="blue" >Forgot password?</a></div>
+						<button class="btn button_width" type="submit">Log in</button>
+					</div>
+				</form>
+			</div>
+
+			<div class="col-md-4 col-lg-4">
+				<div class="title">Register</div>
+
+				<form method="post">
+					<div class="updown">
+						<input type="text" name="name" required class="form-control light_blue_boarder input_edge" placeholder="name">
+					</div>
+
+					<div class="updown">
+						<input type="email" name="email" required class="form-control light_blue_boarder input_edge" placeholder="email address">
+					</div>
+
+					<div class="updown">
+						<input type="password" name="password" required class="form-control light_blue_boarder input_edge" placeholder="password">
+					</div>
+
+					<div class="updown">
+						<input type="password" name="password2" required class="form-control light_blue_boarder input_edge" placeholder="password">
+					</div>
+
+					<div class="updown">
+						
+						<div class="padding-10">
+							<input type="checkbox">
+							<a class="blue" href="tandc.html">Terms & conditions</a>
+						</div>
+						<button class="btn button_width" type="submit">Register</button>
+					</div>
+				</form>
+			</div>
+			<div class="col-md-2 col-lg-2"> <p></p></div>
+		</div>
+	</div>
+</div>
+
+<div class="footer navbar-fixed-bottom">
+	<div class="updown icos">
+		<a href="https://github.com/" target="_blank" class="github">github</a>
+		&nbsp;&nbsp;
+		<a href="https://www.greenvelope.com/" target="_blank" class="greenvelope">greenvelope</a>
+		&nbsp;&nbsp;
+		<a href="https://twitter.com/" target="_blank" class="twitter">twitter</a>
+	</div>
+
+	<div class="updown">
+		Copyright Staff
+	</div>
+</div>
+
+
+</body>
+</html>
