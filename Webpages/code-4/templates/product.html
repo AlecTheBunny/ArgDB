@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.font.im/css?family=Quicksand|Titillium+Web" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="../static/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="../static/css/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>product</title>
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://arg.napier.ac.uk">ARG@EUN</a>
+    </div>
+	  
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+	
+      <form class="navbar-form navbar-left" action="/result" method="post">
+       <div class="input-group "  style="margin-top: 3px;">
+					       <input type="text" class="form-control input_edge light_blue_boarder" placeholder="Search" name="keyword" />
+				            <span class="input-group-btn">
+								<button type="submit" class="btn" style="margin-top: -1px;">Search</button>
+				          	</span>
+					 </div>
+		</form>
+
+
+	    <div class="navbar-right">
+		  	<a class="navbar-brand log_ico" href="/register">&nbsp;</a>
+	    </div>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid mycontainer">
+
+	<div class="container page1">
+
+		<div class="row page5">
+			<div class="col-md-12 col-lg-12">
+				<div class="item">
+					<div class="row line1">
+						<div class="col-md-8 col-lg-8 col-xs-8">
+							
+							<span class="title2_big"> {{ title }}</span>
+						<div class="row">
+						<div class="col-md-2 col-lg-2 col-xs-2">
+						<span><a class ="id" href="https://orcid.org">
+							<img src="../static/images/id.png" alt=""></a>{{ name }}</span>
+						</div>
+						</div>
+						</div>
+						<div class="col-md-4 col-lg-4 col-xs-4 right-align">
+							<a href=""><img src="../static/images/download.png" alt=""></a>
+						</div>
+					</div>
+					<div>
+						<p>{{ text }}</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="page5block">
+			<pre>
+{{ code }}
+</pre>
+		</div>
+
+	</div>
+</div>
+
+<div class="footer navbar-fixed-bottom">
+	<div class="updown icos">
+		<a href="https://github.com/ARG-ENU" target="_blank" class="github">github</a>
+		&nbsp;&nbsp;
+		<a href="https://www.napier.ac.uk/people/simon-wells" target="_blank" class="greenvelope">greenvelope</a>
+		&nbsp;&nbsp;
+		<a href="https://twitter.com/simonwells" target="_blank" class="twitter">twitter</a>
+	</div>
+
+	<div class="updown">
+		Copyright Staff
+	</div>
+</div>
+
+<script type="text/javascript" src="../static/js/jquery.min.js"></script>
+<script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
+
+</body>
+</html>
