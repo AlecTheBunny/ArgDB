@@ -11,4 +11,6 @@ Webpages | Webpages that allow user to upload when connected to the database (Al
 
 Mongo Database.docx | Database technical documentation
 
+Design Document.docx | Design documentation 
+
 
